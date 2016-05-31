@@ -113,7 +113,7 @@ auto f = [x](int i) { i + x; };
 
 ```cpp
 int i = 10;
-auto f = [i] { return --i > 0 ? true : false; };
+auto f = [&i] { return --i > 0 ? true : false; };
 ```
 
 ## [练习10.22](exercise10_22.cpp)
